@@ -1,4 +1,4 @@
-// Package hello is the smallest Runwell plugin, the example docs/plugins.md
+// Package hello is the smallest Runwell plugin, the example runwellgo's docs/plugins.md
 // walks through: a note on every client's page (a panel), a page in the
 // sidebar with a small form kept in its own storage, and an ear for one
 // event. It asks for its storage and to read records, nothing else.
@@ -12,10 +12,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Martin-Business-Consultants/runwellgo/internal/plugin"
+	"github.com/Martin-Business-Consultants/runwellgo/v3/plugin"
 )
 
-// Module is the plugin, for the core to register (internal/core/plugins.go).
+// Module is the plugin, for a binary to hand runwell.Main (cmd/runwell's main.go).
 func Module() *plugin.Module {
 	return &plugin.Module{
 		Manifest: plugin.Manifest{
